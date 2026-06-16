@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krishna · Senior DE Study Tracker</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#4F8EF7" stroke-width="1.5"/><path d="M5 8h6M8 5v6" stroke="#4F8EF7" stroke-width="1.5" stroke-linecap="round"/></svg>
+      krishna<span>.dev</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="pages/month1.html">Month 1</a></li>
+      <li><a href="pages/month2.html">Month 2</a></li>
+      <li><a href="pages/month3.html">Month 3</a></li>
+      <li><a href="pages/resources.html">Resources</a></li>
+      <li><a href="pages/companies.html">Companies</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container page-wrap">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-eyebrow">Senior Data Engineer · 3-Month Prep Plan</div>
+    <h1>Your road to<br><em>Senior DE</em> roles</h1>
+    <p class="hero-sub">
+      A structured 12-week plan covering Python, PySpark, SQL, Azure, Streaming, and AI — built for your exact profile and targeting GCCs, consulting firms, and product companies in Hyderabad.
+    </p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num accent" id="stat-weeks">0</div>
+        <div class="hero-stat-label">weeks completed</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num green">12</div>
+        <div class="hero-stat-label">total weeks</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num amber">3</div>
+        <div class="hero-stat-label">portfolio projects</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">~2hr</div>
+        <div class="hero-stat-label">per day</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OVERALL PROGRESS RING -->
+  <div class="section">
+    <div class="section-title">Overall Progress</div>
+    <div style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px 32px;">
+      <div class="ring-wrap">
+        <svg class="ring-svg" width="80" height="80" viewBox="0 0 80 80">
+          <circle class="ring-bg" cx="40" cy="40" r="30"/>
+          <circle class="ring-arc" id="ring-arc" cx="40" cy="40" r="30"
+            stroke="#4F8EF7"
+            stroke-dasharray="188.5"
+            stroke-dashoffset="188.5"/>
+        </svg>
+        <div>
+          <div style="font-family:var(--mono);font-size:28px;font-weight:700;color:var(--accent)" id="ring-pct">0%</div>
+          <div style="font-size:12px;color:var(--text2)" id="ring-done">0 of 73 topics</div>
+          <div style="font-size:11px;color:var(--text3);margin-top:2px">topics checked off</div>
+        </div>
+      </div>
+      <div style="flex:1;min-width:200px">
+        <div style="font-size:13px;color:var(--text2);line-height:1.7">
+          Tick off topics as you complete them inside each month. Progress saves in your browser automatically — no account needed.
+        </div>
+        <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+          <a href="pages/month1.html" style="font-size:12px;font-weight:600;color:var(--green);text-decoration:none;padding:5px 12px;border:1px solid rgba(34,201,122,.3);border-radius:6px;">→ Month 1</a>
+          <a href="pages/month2.html" style="font-size:12px;font-weight:600;color:var(--accent);text-decoration:none;padding:5px 12px;border:1px solid rgba(79,142,247,.3);border-radius:6px;">→ Month 2</a>
+          <a href="pages/month3.html" style="font-size:12px;font-weight:600;color:var(--purple);text-decoration:none;padding:5px 12px;border:1px solid rgba(167,139,250,.3);border-radius:6px;">→ Month 3</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PHASES -->
+  <div class="section">
+    <div class="section-title">3-Month Phases</div>
+    <div class="phase-grid">
+      <div class="phase-card m1">
+        <div class="phase-label m1">Month 1 · Weeks 1–4</div>
+        <div class="phase-title">Rebuild the core</div>
+        <div class="phase-sub">Python foundations · PySpark internals · SQL advanced · Delta Lake · data modeling · Portfolio Project 1</div>
+        <div class="phase-progress-bar">
+          <div class="phase-progress-fill" id="prog-m1-bar" style="width:0%"></div>
+        </div>
+        <div class="phase-progress-label">
+          <span id="prog-m1-num">0 / 29 topics</span>
+          <span id="prog-m1-pct">0%</span>
+        </div>
+        <a href="pages/month1.html" class="phase-link">View month 1 →</a>
+      </div>
+      <div class="phase-card m2">
+        <div class="phase-label m2">Month 2 · Weeks 5–8</div>
+        <div class="phase-title">Platform breadth</div>
+        <div class="phase-sub">Kafka + Streaming · Databricks advanced · CI/CD · dbt · data quality · cloud architecture · Project 2</div>
+        <div class="phase-progress-bar">
+          <div class="phase-progress-fill" id="prog-m2-bar" style="width:0%"></div>
+        </div>
+        <div class="phase-progress-label">
+          <span id="prog-m2-num">0 / 22 topics</span>
+          <span id="prog-m2-pct">0%</span>
+        </div>
+        <a href="pages/month2.html" class="phase-link">View month 2 →</a>
+      </div>
+      <div class="phase-card m3">
+        <div class="phase-label m3">Month 3 · Weeks 9–12</div>
+        <div class="phase-title">Senior edge</div>
+        <div class="phase-sub">AI/RAG awareness · system design · interview prep · portfolio polish · mock interviews · apply</div>
+        <div class="phase-progress-bar">
+          <div class="phase-progress-fill" id="prog-m3-bar" style="width:0%"></div>
+        </div>
+        <div class="phase-progress-label">
+          <span id="prog-m3-num">0 / 22 topics</span>
+          <span id="prog-m3-pct">0%</span>
+        </div>
+        <a href="pages/month3.html" class="phase-link">View month 3 →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILL MAP -->
+  <div class="section">
+    <div class="section-title">Current Skill Map</div>
+    <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px">
+      <div class="skill-grid">
+        <div class="skill-row"><span class="skill-name">SQL (advanced)</span><div class="skill-track"><div class="skill-fill" style="width:88%;background:#22C97A"></div></div><span class="skill-badge badge-green">Strong</span></div>
+        <div class="skill-row"><span class="skill-name">ADF + pipelines</span><div class="skill-track"><div class="skill-fill" style="width:74%;background:#22C97A"></div></div><span class="skill-badge badge-green">Good</span></div>
+        <div class="skill-row"><span class="skill-name">Python</span><div class="skill-track"><div class="skill-fill" style="width:48%;background:#F5A623"></div></div><span class="skill-badge badge-amber">Month 1</span></div>
+        <div class="skill-row"><span class="skill-name">PySpark</span><div class="skill-track"><div class="skill-fill" style="width:52%;background:#F5A623"></div></div><span class="skill-badge badge-amber">Month 1</span></div>
+        <div class="skill-row"><span class="skill-name">Delta Lake</span><div class="skill-track"><div class="skill-fill" style="width:42%;background:#F5A623"></div></div><span class="skill-badge badge-amber">Month 1–2</span></div>
+        <div class="skill-row"><span class="skill-name">Streaming / Kafka</span><div class="skill-track"><div class="skill-fill" style="width:22%;background:#F26C6C"></div></div><span class="skill-badge badge-red">Month 2</span></div>
+        <div class="skill-row"><span class="skill-name">System architecture</span><div class="skill-track"><div class="skill-fill" style="width:30%;background:#F26C6C"></div></div><span class="skill-badge badge-red">Month 2–3</span></div>
+        <div class="skill-row"><span class="skill-name">CI/CD + dbt</span><div class="skill-track"><div class="skill-fill" style="width:20%;background:#F26C6C"></div></div><span class="skill-badge badge-red">Month 2</span></div>
+        <div class="skill-row"><span class="skill-name">AI / RAG / MLOps</span><div class="skill-track"><div class="skill-fill" style="width:15%;background:#F26C6C"></div></div><span class="skill-badge badge-red">Month 3</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAILY SCHEDULE -->
+  <div class="section">
+    <div class="section-title">Daily Schedule — fits around PwC</div>
+    <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden">
+      <table class="schedule-table">
+        <thead><tr><th>Time</th><th>What</th></tr></thead>
+        <tbody>
+          <tr><td>6:30–7:30 am</td><td><strong style="color:var(--text)">Theory</strong> — Read one resource (article / docs / book chapter). No multitasking. Take 3 bullet notes after.</td></tr>
+          <tr><td>9:00–10:00 pm</td><td><strong style="color:var(--text)">Code</strong> — Write the exercise from today's theory. Push to GitHub even if 10 lines. Concepts only stick when you write them.</td></tr>
+          <tr><td>Commute</td><td><strong style="color:var(--text)">Verbal</strong> — Explain one concept from today out loud. ByteByteGo / Ankit Bansal on YouTube at 1.5×.</td></tr>
+          <tr><td>Saturday (4 hrs)</td><td><strong style="color:var(--text)">Timed drills</strong> — 2 hrs SQL (DataLemur / StrataScratch), 2 hrs Python / PySpark. 20 min per problem, no help.</td></tr>
+          <tr><td>Sunday</td><td><strong style="color:var(--text)">Build</strong> — Portfolio project work. Clean code, write README, push commits. No new learning on Sundays.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
